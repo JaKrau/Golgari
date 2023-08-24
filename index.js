@@ -19,7 +19,7 @@ const questions = [
 const license = [
     'No License',
     'Apache 2.0',
-    'GNU GPLv2',
+    'GPLv2',
     'GNU GPLv3',
     'MIT',
     'ISC',
