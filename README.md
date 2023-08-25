@@ -13,7 +13,7 @@ git clone git@github.com:JaKrau/Golgari.git
 
 node index.js
   
-   ![site screenshot](/assets/images/Golgari.png?raw=true "nav items")
+   ![site screenshot](/assets/images/Golgari.png?raw=true "screenshot of generated README")
 
 
 ## Credits
