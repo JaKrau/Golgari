@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
-const fs = require(fs);
-const inquirer = require("inquirer");
 const generateMarkdown = require("./assets/generateMarkdown");
+
+const inquirer = require("inquirer");
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -9,9 +10,10 @@ const questions = [
     'Description:',
     'Installation Instructions:',
     'Usage:',
-    'License:',
     'Contributor Guidelines:',
     'Tests:',
+    'Credits:',
+    'License:',
     'GitHub Username:',
     'Email Address:',
 ];
@@ -23,16 +25,17 @@ const license = [
     'GNU GPLv3',
     'MIT',
     'ISC',
-]
+];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// This function is unnecessary, writeFileSync works.
+/*function writeToFile(fileName, data) {
     try {
         fs.writeFile(fileName, data);
     } catch (error) {
         console.log(error);
     }
-}
+}*/
 
 // TODO: Create a function to initialize app
 function init() {
@@ -54,29 +57,33 @@ function init() {
             name: 'usage',
         },
         {
-            type: 'list',
-            name: 'license',
             message: questions[4],
-            choices: license,
-        },
-        {
-            message: questions[5],
             name: 'contributing',
         },
         {
-            message: questions[6],
+            message: questions[5],
             name: 'tests',
         },
         {
+            message: questions[6],
+            name: 'credits',
+        },
+        {
+            type: 'list',
+            name: 'license',
             message: questions[7],
-            name: 'github',
+            choices: license,
         },
         {
             message: questions[8],
+            name: 'github',
+        },
+        {
+            message: questions[9],
             name: 'email',
-        }
+        },
     ]).then((response) => {
-        writeToFile('./newREADME/README.md', generateMarkdown(response));
+        fs.writeFileSync('./newREADME/README.md', generateMarkdown(response)); 
     });
 }
 

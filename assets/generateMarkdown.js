@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const badgeLink = `[![License](https://img.shields.io/badge/`
-  
+
   switch(license) {
     case 'No License':
       return '';
@@ -43,26 +43,68 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+const licenseLink = renderLicenseLink(license);
 
   if (license === 'No License') {
-    return 'This project has no license.';
-  } 
-  if (license === 'Apache 2.0') {
-    return 'Apache License 2.0';
-  } else if (license === 'GPLv2') {
-    return 'GNU General Public License v2.0';
-  } else if (license === 'GNU GPLv3') {
-    return 'GNU General Public License v3.0';
-  } else if (license === 'MIT') {
-    return 'MIT License';
-  } else if (license === 'ISC') {
-    return 'ISC License';
+    return `This project is not licensed`;
+  } else {
+      return `This project is licensed under the [${license}](${licenseLink}) license`
   }
 }
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  const licenseSection = renderLicenseSection(data.license);
+  const licenseBadge = renderLicenseBadge(data.license);
+
+
+  let tableOfContents = `
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Questions](#questions)`
+  
   return `# ${data.title}
+${licenseBadge}
+
+## Description
+
+${data.description}
+
+## Table of Contents
+
+${tableOfContents}
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+${data.tests}
+
+## Credits
+
+${data.credits}
+
+## License
+
+${licenseSection}
+
+## Questions
+
+If you have any questions regarding functionality or installation, I can be reached at ${data.email} or visit my GitHub page at [${data.github}](https://github.com/${data.github}).
 
 `;
 }
