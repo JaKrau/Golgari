@@ -7,10 +7,11 @@ I built this README generator using the inquirer package. Within the user's term
 
 ## Installation
 
-Clone the repository using one of the options below
-HTTPS - https://github.com/JaKrau/README-Generator.git
-SSH - git@github.com:JaKrau/README-Generator.git
-GitHuB CLI - gh repo clone JaKrau/README-Generator
+Clone the repository using one of the options below          
+        
+HTTPS - https://github.com/JaKrau/README-Generator.git        
+SSH - git@github.com:JaKrau/README-Generator.git        
+GitHuB CLI - gh repo clone JaKrau/README-Generator        
 
 ## Usage
 
@@ -25,9 +26,9 @@ Walkthrough Video
 ## Credits
 
 
-This README's structure is courtesy of https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-Starter code for this project: https://github.com/coding-boot-camp/potential-enigma
-Licenses found at: https://choosealicense.com/
+This README's structure is courtesy of https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide    
+Starter code for this project: https://github.com/coding-boot-camp/potential-enigma      
+Licenses found at: https://choosealicense.com/  
 Badges from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba && https://shields.io/
 
 ## License
