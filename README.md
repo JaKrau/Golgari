@@ -2,7 +2,7 @@
 
 ## Description
 
-I built this README generator using inquirer package. Within the user's terminal they can answer prompts about their project to generate a professional README.
+I built this README generator using the inquirer package. Within the user's terminal they can answer prompts about their project to generate a professional README. Watch the walk through video below to see how it works!
 
 
 ## Installation
