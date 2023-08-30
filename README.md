@@ -15,6 +15,9 @@ node index.js
   
    ![site screenshot](/assets/images/Golgari.png?raw=true "screenshot of generated README")
 
+Walkthrough Video 
+
+[walkThrough_ Aug 25, 2023 10_42 AM.webm](https://github.com/JaKrau/Golgari/assets/108687237/883aba01-e930-4a6c-b35e-4ee1aa156e4d)
 
 ## Credits
 
