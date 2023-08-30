@@ -7,7 +7,10 @@ I built this README generator using the inquirer package. Within the user's term
 
 ## Installation
 
-git clone git@github.com:JaKrau/Golgari.git
+Clone the repository using one of the options below
+HTTPS - https://github.com/JaKrau/README-Generator.git
+SSH - git@github.com:JaKrau/README-Generator.git
+GitHuB CLI - gh repo clone JaKrau/README-Generator
 
 ## Usage
 
